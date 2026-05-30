@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aquamarine;
+        }
+
+        form {
+            background-color: rgb(8, 199, 46);
+            padding: 20px;
+            max-width: 700;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15;
+            border: 2 solid #ccc;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        .submit button{
+             background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- job application form -->
+
+    <fieldset>
+        <legend>Personal information</legend>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+
+            <label for="position">Position Applied For:</label>
+            <option value="select a position">Select a position :</option><br>
+            <input type="checkbox">Developer</input><br>
+            <input type="checkbox">Designer</input><br>
+            <input type="checkbox">Manager</input>
+            </select>
+            <br>
+            <label for="resume">Upload Resume:</label><br <input type="file" id="resume" name="resume">
+
+            <button type="submit">Submit Application</button>
+
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
