@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2899b8;
+            margin: 20px;
+        }
+
+        form {
+            background-color: rgb(202, 155, 155);
+            padding: 20px;
+            max-width: 700px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #999;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .inline {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#" method="post">
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname"
+                placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                placeholder="example@gmail.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                placeholder="Enter phone number" required>
+
+            <label for="website">Website or Portfolio:</label>
+            <input type="url" id="website" name="website"
+                placeholder="https://yourwebsite.com">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <!-- Job Details -->
+        <fieldset>
+            <legend>Job Details</legend>
+
+            <label for="position">Job Position:</label>
+            <select id="position" name="position" required>
+                <option value="">-- Select Position --</option>
+                <option value="frontend">Frontend Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="uiux">UI/UX Designer</option>
+                <option value="qa">QA Engineer</option>
+            </select>
+
+            <label>Preferred Work Location:</label>
+
+            <input type="radio" id="onsite" name="location"
+                value="On-site" class="inline" required>
+            <label for="onsite" class="inline">On-site</label>
+
+            <input type="radio" id="remote" name="location"
+                value="Remote" class="inline">
+            <label for="remote" class="inline">Remote</label>
+
+            <input type="radio" id="hybrid" name="location"
+                value="Hybrid" class="inline">
+            <label for="hybrid" class="inline">Hybrid</label>
+
+            <br><br>
+
+            <label>Skills:</label>
+
+            <input type="checkbox" id="html" name="skills"
+                value="HTML" class="inline">
+            <label for="html" class="inline">HTML</label>
+
+            <input type="checkbox" id="css" name="skills"
+                value="CSS" class="inline">
+            <label for="css" class="inline">CSS</label>
+
+            <input type="checkbox" id="javascript" name="skills"
+                value="JavaScript" class="inline">
+            <label for="javascript" class="inline">JavaScript</label>
+
+            <input type="checkbox" id="react" name="skills"
+                value="React" class="inline">
+            <label for="react" class="inline">React</label>
+
+            <input type="checkbox" id="node" name="skills"
+                value="Node.js" class="inline">
+            <label for="node" class="inline">Node.js</label>
+
+            <br><br>
+
+            <label for="resume">Resume Upload:</label>
+            <input type="file" id="resume" name="resume" required>
+
+            <label for="about">Write About Yourself:</label>
+            <textarea id="about" name="about" rows="5"
+                placeholder="Tell us about yourself..." required></textarea>
+        </fieldset>
+
+        <!-- Extra Section -->
+        <fieldset>
+            <legend>Extra Section</legend>
+
+            <label for="search">Search your favorite tech stack:</label>
+            <input type="search" id="search" name="search"
+                placeholder="Search technologies...">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                placeholder="Enter password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password"
+                name="confirm-password"
+                placeholder="Confirm password" required>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">
+            Submit Application
+        </button>
+
+    </form>
+
+</body>
+
+</html>
